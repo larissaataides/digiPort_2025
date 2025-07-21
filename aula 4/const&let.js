@@ -12,7 +12,10 @@ let altura = 1.80;
 let peso = 84;
 let anoAtual = 2010;
 
-const imc = peso / (altura*altura);
+const IMC = peso / (altura*altura);
 const anoNascimento = anoAtual - idade;
 
 console.log(nome, sobrenome, 'tem', idade, 'anos', 'e pesa', peso, 'quilos')
+console.log(`${nome}${sobrenome} tem ${idade} anos, pesa ${peso} kg.`);
+console.log(`Ele tem ${altura}m de altura, e o IMC dele é de ${IMC}.`);
+console.log(`${nome.split("O")[0].toLowerCase()} ${sobrenome.toLowerCase()} nasceu em ${anoNascimento}.`);

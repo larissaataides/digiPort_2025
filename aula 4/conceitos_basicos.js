@@ -1,5 +1,5 @@
-let idade = 24; //number
-let nome = 'Duda' //string
+let idade = 22; //number
+let nome = 'Lari' //string
 let ativo = true; //boolean
 let nota; //undefined
 let cidade = null; //null
