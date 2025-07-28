@@ -1,0 +1,15 @@
+
+let a = 5 
+let b = 3
+let c = 10
+let d = 6 
+
+console.log(a > b) //true
+
+console.log(c == a) //false
+
+console.log(!(a < c)) //false - estou negando o valor
+
+console.log(d % 2 == 0 && d > b) // true & true
+
+ // 6%2 == 0 E 6 + 3

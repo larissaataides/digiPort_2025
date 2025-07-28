@@ -1,0 +1,71 @@
+// Exercício 1 - horas trabalhadas: 
+
+let salarioPorHora = 30
+let horasTrabalhadas = 160
+let salarioFinal
+
+console.log(salarioPorHora * horasTrabalhadas, salarioFinal)
+
+// let salarioFinal = salarioPorHora * horasTrabalhadas;
+// console.log(salarioFinal); 
+
+/*_______________________________________________________________
+ Exercício 2 - desconto em compra:*/
+
+let precoOriginal = 200
+let desconto = precoOriginal * 0.10
+let precoFinal = precoOriginal - desconto
+
+console.log(precoFinal)
+
+/*________________________________________________________________
+Exercício 3 - verificação de maioridade: */
+
+let idade = 17;
+let maiorIdade = idade >= 18
+
+console.log(maiorIdade)
+
+/*________________________________________________________________
+Exercício 4 - Número impar ou par: */
+
+let itens = 22;
+let parOuImpar = itens % 2 == 0 
+
+console.log("é par:", parOuImpar)
+
+/* Ou usar uma função: 
+
+function imparOupar(num){
+    return num % 2 == 0
+}
+
+Ou ainda: 
+
+function paridade(num){
+if (num % 2 !== 0){
+console.log("é par")
+} else {
+    }
+}
+
+*/ 
+
+/*________________________________________________________________
+Exercício 5 - comparação de == ou ===
+let verificação = 
+
+/*________________________________________________________________
+Exercício 6 - Larissa e a festa
+*/ 
+
+let estaChovendo = true
+let guardaChuva = false
+
+console.log(estaChovendo && guardaChuva)
+
+if (!estaChovendo && guardaChuva){ 
+    console.log ("Larissa vai na festa")
+}
+    else { console.log ("Larissa não vai ir na festa" )
+}
