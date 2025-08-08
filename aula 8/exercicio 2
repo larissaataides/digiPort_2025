@@ -1,0 +1,12 @@
+//sistema para verificar o tipo de numero informado. exiba se o numero é positivo, negativo ou zero
+
+let num1 = 22;
+
+
+if (num1 > 0){
+  console.log("o numero maior é positivo")
+} else if (){
+   console.log("o numero maior é", maior = num2)
+ } else{
+   console.log("o numero maior é", maior = num3)
+}

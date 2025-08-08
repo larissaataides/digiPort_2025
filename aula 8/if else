@@ -1,0 +1,41 @@
+// script que leia 3 numeros, em seguida mostrar o maior numero e o menor deles
+let num1 = 22;
+let num2 = 3;
+let num3 = 10;
+let num 
+
+/*
+if (num1 >= num2 == num || num >= num3){
+    console.log (num + "larissa")
+} else {("sei la") 
+}
+*/
+
+
+if (num1 === num2 || num2 === num3 || num1 === num3) {
+    console.log(num);
+} else {
+    console.log("No two values are equal.");
+}
+
+
+let maior = num1
+let menor = num1
+
+if(num2 > maior){
+    maior = num2;
+}
+if (num2 < menor){
+    menor = num2;
+}
+
+//verificando o menor
+if(num2 > menor){
+    menor = num2;
+}
+if (num3 < menor){
+    menor = num3;
+}
+
+console.log ("o maior numero é o", maior )
+console.log ("o menor numero é o", menor )

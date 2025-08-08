@@ -1,0 +1,28 @@
+/*
+Joana coloca bombom em 10 caixinhas
+
+síntaxe geral do For: 
+for (início; testa condição; incremento){
+    //códico
+} 
+    */
+
+
+for (let i = 1; i <= 10; i++){
+    console.log("Colocando bombom na caixinha " + i)
+}
+
+/* 
+a condição pode ou não ser atualizada.
+sintáxe de While
+
+*/
+
+bateria = 100; 
+
+while (bateria > 20) {
+    console.log("Robô andnando... bateria em " + bateria + "%");
+    bateria -= 15;
+}
+
+console.log("Bateria fraca. Robô não anda mais :( ")

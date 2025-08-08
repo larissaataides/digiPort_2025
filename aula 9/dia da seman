@@ -1,0 +1,19 @@
+let dia = 5
+
+switch (dia){
+    case dia = 1:
+console.log("segunda")
+
+case dia = 2:
+console.log("terça")
+break; 
+case dia = 3:
+console.log("quarta")
+break; 
+case dia = 4:
+console.log("quinta")
+break; 
+case dia = 5:
+console.log("sexta")
+
+}

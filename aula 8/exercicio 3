@@ -1,0 +1,17 @@
+//em que turno você estuda. receba um valor para turno cmo M = manhã, V = vespertino, N = noturno, Z default
+//imprima mensagem conforme o turno
+
+let turno 
+
+switch (turno){
+
+ case 1:
+    turno == manha (console.log("bom dia"));
+
+case 2: 
+turno == tarde (console.log("boa tarde"));
+
+case 3: 
+turno == noite (console.log("boa noite"));
+
+}

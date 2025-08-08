@@ -1,0 +1,12 @@
+
+let medalha = 1
+
+if (medalha <= 1) {
+    console.log("medalha de ouro")
+
+} else if (medalha <= 2) {
+    console.log("medalha de prata!")
+
+} else {
+    console.log("medalha de bronze")
+}

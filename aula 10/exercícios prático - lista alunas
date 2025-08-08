@@ -1,0 +1,30 @@
+// lista de alunas e o sabor favorito de cada aluna 
+
+const aluna = ["ana", "paula", "geovana"]
+const saborSorvete = ["creme", "chocolate", "pistache"]
+
+for (let i = 0; i < aluna.length; i++){
+    console.log("Nome " + aluna[i] + " e o sabor favorito: " + saborSorvete[i])
+}
+
+//outra solução 
+
+const alunas =[
+    {nome: "Ana", sorvete: "chocolate"},
+    {nome: "Amanda", sorvete: "creme"},
+    {nome: "Sasá", sorvete: "pistache"},
+]; 
+
+for (const aluna of alunas){
+    console.log(`Nome: ${aluna.nome} | sabor favorito: ${aluna.sorvete}`);
+    }
+
+
+const dados = "Ana, chocolate; Gregória, morango; Julia, pistache";
+
+const pares = dados.split(";");
+
+for (let i = 0; i < pares.length; i++){
+    const partes = pares[i].split(",");
+    console.log(`Nome: ${partes[0]} | Sabor favorito ${partes[1]}`)
+}
