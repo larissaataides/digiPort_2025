@@ -1,0 +1,25 @@
+const prompt = require("prompt-sync")();
+let opcao
+let saldoInicial = 1000
+opcao = parseInt(prompt("escolha uma opção: ")); 
+
+while (saldoInicial >=1000) {
+   
+    switch (opcao) {
+        case 1:
+            console.log("verificar saldo");
+            break;
+        case 2:
+            console.log("depositar dinheiro");
+            break;
+        case 3:
+            console.log("sacar");
+            break;
+    }
+ 
+    if (opcao === 4) {
+        console.log("saindo...");
+        break; // para o loop de vez
+    }
+} 
+

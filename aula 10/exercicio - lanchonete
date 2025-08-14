@@ -2,3 +2,29 @@
 const prompt = require("prompt-sync")();
 
 opcao = parseInt(prompt("escolha uma opção: ")); 
+
+while (true) {
+    opcao = parseInt(prompt("Quantas maçãs colheu hoje? "));
+ 
+    switch (opcao) {
+        case 1:
+            console.log("Cardápio: 1 - Hambúrguer; 2 - Pizza; 3 - Salada");
+            break;
+        case 2:
+            console.log("Faça seu pedido: 1 - Hambúrguer; 2 - Pizza; 3 - Salada");
+            break;
+        case 3:
+            console.log("Fale com o atendente: Digite sua mensagem");
+            break;
+        case 4:
+            console.log("Saindo do menu. Obrigado!");
+            break;
+        default:
+            console.log("Opção inválida. Tente novamente.");
+    }
+ 
+    if (opcao === 4) {
+        break; // para o loop de vez
+    }
+} 
+

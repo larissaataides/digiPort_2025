@@ -1,5 +1,5 @@
-
-let medalha = 1
+//medalha
+let  = 1
 
 if (medalha <= 1) {
     console.log("medalha de ouro")

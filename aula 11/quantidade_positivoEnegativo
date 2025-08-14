@@ -1,0 +1,23 @@
+
+let positivo = 0
+let negativo = 0 
+let zeros = 0 
+
+for (let i = 1; i <= 10; i++){
+    let numero = prompt(`qual numero ${i}?`)
+    
+    if (numero > 0){
+        positivo++;
+     } else if (numero < 0){
+negativo++;
+     }
+
+    else {
+        zeros +=1;
+    }
+}
+
+console.log("quantidade de numeros positivos" + positivo)
+console.log("quantidade de numeros positivos" + negativo)
+console.log("quantidade de numeros positivos" + zeros)
+

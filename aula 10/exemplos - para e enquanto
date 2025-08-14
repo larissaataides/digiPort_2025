@@ -16,6 +16,7 @@ for (let i = 1; i <= 10; i++){
 a condição pode ou não ser atualizada.
 sintáxe de While
 
+exemplo: robô só anda com bateria mais de 20%
 */
 
 bateria = 100; 

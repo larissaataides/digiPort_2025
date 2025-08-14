@@ -1,0 +1,10 @@
+const prompt = require("prompt-sync")();
+
+numeroMaca = parseInt(prompt("Quantas maçãs você colheu hoje??")); 
+
+for (let dia = 1; dia <= 10; dia++){
+    let numeroMaca = prompt(`quantas maçãs ${dia}?`)
+
+        console.log(`No dia ${dia}, joão colheu ${numeroMaca} maçãs!`)
+    }
+

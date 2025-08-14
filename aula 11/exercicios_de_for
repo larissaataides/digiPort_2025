@@ -1,0 +1,14 @@
+let vermelho = 0
+let verde = 0
+
+for (let fruta = 1; fruta <= 10; fruta++) {
+ let cor = prompt(`qual cor ${fruta}?`)
+} if (fruta == "vermelho"){
+    vermelho++;
+} else (fruta == "verde");{
+    verde++
+}
+
+console.log("frutas vermelhas" + vermelho);
+console.log("frutas vermelhas" + verde);
+
