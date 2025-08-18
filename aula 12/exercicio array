@@ -1,0 +1,20 @@
+// Arrays are a way to store multiple values in a single variable.
+// They can hold any type of data, including numbers, strings, and even other arrays.
+
+let thingsILike = ["Pizza", "Movies", "Music"];
+
+// There are many methods to manipulate arrays.
+// Access w3schools for more information: https://www.w3schools.com/js/js_array_methods.asp
+
+console.log(thingsILike);
+
+console.log(thingsILike.at(2)); //item da posição 2 
+
+//adicionar um elemento no array
+
+console.log(thingsILike.push("torta de limão")) //adicionar um item no array
+console.log(thingsILike) 
+
+thingsILike[0] = "hamburguer" //mudar o valor do índice 0 - primeiro
+
+console.log(thingsILike)
