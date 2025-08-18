@@ -1,0 +1,128 @@
+/*objetos são estruturas que armazenam valores em pares chave-valor; dados > propriedades; comportamentos > métodos
+pode-se acessar propriedades com o this
+
+ Objects are a way to store data in key-value pairs.
+ Example: bird = {
+   name: "Sparrow",
+   age: 1,
+   sings: true,
+;*/
+
+/* Exercises:
+
+ 1. Simple object
+ Make an object 'cat' with 'name', 'color', and 'age'.
+ Show the values in the console.
+*/
+
+let cat = {
+name: "Pipoca",
+color: "laranja",
+age: 2
+};
+
+console.log(cat)
+
+// 2. Add and change
+// Add 'toy' to the cat object.
+// Change the 'age' to another number.
+
+cat.toy = "ratinho"
+cat.age = 4
+console.log(cat) 
+
+// 3. Object with method
+// Make an object 'dog' with 'name', 'breed',
+// and a method 'bark()' that prints "Woof!".
+
+let dog = {
+    name: "Carlos",
+    breed: "cachorro",
+    bark: function(){console.log('au au')}
+};
+
+console.log(dog)
+dog.bark()
+
+// 4. Array of objects
+// Make an array 'market' with 3 products.
+// Each product has 'name' and 'price'.
+// Print the name of each product along with its price.
+
+let market = {
+    produtos: ["carne", "feijão", "pipoca"],
+    preço: [145, 3, 10],
+    }
+
+console.log(market.preço, market.produtos)
+
+// outra forma de fazer + certa: 
+let mercado = [
+    {name: "apple", price: 1.5},
+    {name: "maçã", price: 7},
+    {name: "maçãzinha", price: 3}];
+
+console.log("Produtos do mercado: ");
+
+for (let i = 0; i < mercado.length; i++){
+      console.log ("Produtos: " + mercado[i].name + ", Price: $" + mercado[i].price); 
+}
+
+// 5. Object inside object
+// Make an object 'movie' with 'title' and 'director'.
+// Inside it, add 'review' with 'rating' and 'comment'.
+// Print the rating and comment.
+
+let movie = {
+    title: "de volta pro futuro",
+    director: "Robert Zemeckis",
+//um objecto dentro de outro objeto
+    review:  {
+rating: 5,
+comment: "amey o filme, demais, tudo de bom!!! :)"
+    }
+}
+console.log("rating: Nota " + movie.review.rating + ", Comment: " + movie.review.comment)
+
+// 6. For...in to sum values
+// We have an object 'scores' with points from 3 players.
+// Use a for...in loop to add all the points together
+// and print the total.
+
+let scores = {
+player_one: 44,
+player_two: 2,
+player_three: 63
+
+}
+
+let total = 0;
+
+for(let players in scores){ // acessar os players dentro do scores
+    total = total + scores[players]; //acessar o scores de cada player
+}
+
+console.log("Total score: " + total); 
+
+
+// 7. Create an object 'agenda' with an array of 'contacts'. (exercício mais difícil)
+// Each contact has 'name' and 'phone'.
+// Add a method 'listContacts()' that prints each contact's name and phone.
+// Add a method 'addContact(name, phone)' to add a new contact.
+
+let agenda = { // criar um objeto agenda
+    contacts: [
+        {name: "alice", phone: 515144152},
+        {name: "joana", phone: 9139038021}],
+    listContacts: function() {
+    for (let i = 0; i < this.contacts.length; i++){
+        console.log ("Name: " + this.contacts[i].name + ", Phone: " + this.contacts[i].phone)
+    }
+},
+
+    addContact: function(name, phone) { //adicionar um novo contato
+        this.contacts.push({name: "Paty", phone: 404048372}) 
+    }
+}
+agenda.addContact(), //chamar o método para adicionar um contato
+agenda.listContacts() //chamar o método para listar os contatos
