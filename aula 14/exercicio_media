@@ -1,0 +1,6 @@
+//implementar uma função que calcula a media arritmetica de um array de numeros e retorna o resultado. utilize essa função
+//para calcular a media de diferentes conjuntos de numeros.
+
+function calcularMedia(numeros) {
+    
+}

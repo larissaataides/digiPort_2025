@@ -1,0 +1,30 @@
+//crie uma função que receba uam string e retorne a string em maiuscula
+
+function paraMaiuscula(str) {
+    return str.toUpperCase();
+}   
+
+console.log(paraMaiuscula("hello")); // "HELLO" 
+
+//outra forma com arrow function
+const paraMaiuscula2 = (string) => string.toUpperCase();
+console.log(paraMaiuscula2("pipoquinha")); // "PIPOQUINHA"
+
+//crie uma função que recebe o ano de nascimento e retorna a idade da pessoa no ano atual
+function calcularIdade(anoNascimento) {
+    const anoAtual = new Date().getFullYear();
+    return anoAtual - anoNascimento;
+}   
+console.log(calcularIdade(1990)); // Exemplo: se o ano atual for 2023, retornará 33 
+
+
+function anosDeIdade (anoNascimento, anoAtual) {
+return anoAtual - anoNascimento;
+
+}
+console.log(anosDeIdade(1990, 2023)); // Exemplo: se o ano atual for 2023, retornará 33
+
+//outro jeito e pegando o ano de idade da pessoa: 
+
+const date = new Date();
+let anoAtual = date.getFullYear();

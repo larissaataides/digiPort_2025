@@ -48,5 +48,5 @@ const prompt = require("prompt-sync")();
 let numbers2 = [];
 for (let i = 0; i < 5; i++){
     let number = parseInt(prompt("Digite um número: "));
-    numbers2.push(number); // Adiciona o número ao array
+    numbers2.push(numeros); // Adiciona o número ao array
 } console.log("Os números inseridos são: " + numbers2);
