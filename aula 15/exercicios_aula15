@@ -1,0 +1,51 @@
+// Exercício 1: Crie uma lista de tarefas usando um array. Adicione itens à lista e depois mostre a lista completa no console..
+
+let listaDeTarefas = [];
+
+function adicionarTarefa(tarefa) {
+    listaDeTarefas.push(tarefa);
+    console.log("Tarefa adicionada.");
+}
+
+adicionarTarefa("estudar JavaScript");
+adicionarTarefa("fazer exercícios");
+console.log(listaDeTarefas)
+
+//escrever o outro jeito de fazer o exercicio 1 com prompt vindo do terminal
+
+//exercicio 2: remover uma tarefa da lista pelo nome. 
+
+function removerTarefa(tarefa){
+
+    const index = listaDeTarefas.indexOf(tarefa);
+    if (index > -1) {
+        listaDeTarefas.splice(index, 1);
+        console.log("Tarefa removida.");
+    } else {
+        console.log("Tarefa não encontrada.");
+    }
+}
+
+removerTarefa("fazer exercícios");
+console.log(listaDeTarefas)
+
+
+
+
+
+
+
+
+
+//exercicio 3: marcar uma tarefa como concluída (adicionando um "✓" ao lado do nome da tarefa).
+function marcarTarefaConcluida(tarefa) {
+    const index = listaDeTarefas.indexOf(tarefa);
+    if (index > -1) {
+        listaDeTarefas[index] = tarefa + " ✓";
+        console.log("Tarefa marcada como concluída.");
+    } else {
+        console.log("Tarefa não encontrada.");
+    }
+}
+marcarTarefaConcluida("estudar JavaScript");
+console.log(listaDeTarefas)
