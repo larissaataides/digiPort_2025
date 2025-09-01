@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping Cart Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fefbd8;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      button {
+        margin: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 5px;
+        padding: 8px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shopping Cart 🛒</h1>
+    <div id="buttonsContainer"></div>
+    <button id="discount10">Apply 10% Discount</button>
+    <button id="resetCart">Reset Cart</button>
+
+    <h2>Products:</h2>
+    <ul id="productList"></ul>
+    <p><strong>Total:</strong> $<span id="total"></span></p>
+
+    <script src="script.js"></script>
+    <script>
+      const products = [
+        ["Bread", 4],
+        ["Rice", 12],
+        ["Beans", 5],
+        ["Milk", 8],
+      ];
+      const productList = document.getElementById("productList");
+      const totalSpan = document.getElementById("total");
+      const buttonsContainer = document.getElementById("buttonsContainer");
+
+      let myCart = new Cart();
+
+      products.forEach(([name, price]) => {
+        const btn = document.createElement("button");
+        btn.innerText = `Add ${name} ($${price})`;
+        btn.onclick = () => {
+          myCart.add(new Product(name, price));
+          updateDisplay();
+        };
+        buttonsContainer.appendChild(btn);
+      });
+
+      document.getElementById("discount10").onclick = () => {
+        myCart.applyDiscount();
+        updateDisplay();
+      };
+
+      document.getElementById("resetCart").onclick = () => {
+        myCart = new Cart();
+        updateDisplay();
+      };
+
+      function updateDisplay() {
+        productList.innerHTML = myCart
+          .showProducts()
+          .split("\n")
+          .map((desc) => `<li>${desc}</li>`)
+          .join("");
+        totalSpan.innerText = myCart.total();
+      }
+
+      updateDisplay();
+    </script>
+  </body>
+</html>
